@@ -219,4 +219,8 @@ nav > ul li:hover .cache {
 
 
 /*--------------------------------------------- Camille CSS ---------------------------------------------*/
-
+#sélec1 .a {
+    font-family: 'B612 Mono', monospace;
+    font-size: 18px;
+    color: #656D41;
+}
