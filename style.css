@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color:  #656D41 #C3BBBA;
+}
+  
+input, button {
+    box-shadow: none;
+    border: none;
+}
+
+body  {
+    background: #F2EBEA;
+}
+
+a {
+    text-decoration: none;
+}
+
+main a:visited {
+    color: black;
+}
+
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+}
+
+.hautarticles a, .tri a, nav a, nav p, .basarticles a {
+    font-family: 'B612 Mono', monospace;
+    font-size: 18px;
+    color: #656D41;
+}
+
+.titre h1, p, figcaption, footer nav a, footer nav ul {
+    font-family: 'Tajawal', sans-serif;
+}
+
+.titre h1 {
+    font-weight: 300;
+    font-size: 48px;
+}
+
+.titre h1 .souligne {
+    font-family: 'B612 Mono', monospace;
+    text-decoration: underline;
+}
+
+.hautarticles {
+    margin: 37.5px 25px;
+    justify-content: space-between;
+}
+
+main {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 115px;
+    gap: 75px;
+}
+
+.hautarticles nav {
+    gap:  10px;
+}
+
+figcaption {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    color: black;
+}
+
+.duo {
+    gap: 125px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:  117px auto 117px;
+}
+
+.duo1 {
+    grid-template-areas: "article1 titre" "article1 article2" ". article2";
+}
+
+.basarticles {
+    padding: 30px 25px 50px;
+    justify-content: flex-end;
+}
+
+.basarticles a {
+   align-items: flex-end;
+}
+
+.duo2 {
+    grid-template-areas: "article7 ." "article5 article6" ". article6";
+}
+
+.trio {
+    gap: 80px;
+}
+
+.article1 {
+    grid-area: article1;
+}
+
+.article2 {
+    grid-area: article2;
+}
+
+.article6 {
+    grid-area: article6;
+}
+
+.article7 {
+    grid-area: article7;
+}
+
+.trio {
+    justify-content: space-around;
+}
+
+footer {
+    background: white;
+    padding: 20px 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: ". reseaux newsletter" "footernav footernav footernav" ". logopaiement .";
+}
+
+.reseaux {
+    grid-area: reseaux;
+    padding: 45px 0;
+    justify-content: center;
+    gap: 45px;
+}
+
+.newsletter {
+    grid-area: newsletter;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+    padding: 5px 20px;
+}
+
+.newsletter p {
+    font-size: 24px;
+}
+
+.newsletter input {
+    border-bottom: black solid 0.5px;
+    color: #948785;
+    font-size: 18px;
+    padding: 2px;
+}
+
+.newsletter button {
+    background: #C3BBBA;
+    height: 30px;
+    width: 250px;
+   font-size: 18px;
+   cursor: pointer;
+}
+
+.logopaiement {
+    grid-area: logopaiement;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 20px;
+}
+
+footer nav {
+    grid-area: footernav;
+    justify-content: space-evenly;
+    padding: 5px 20px;
+}
+
+footer nav img {
+    display: block;
+    margin: auto;
+}
+
+ul {
+    list-style-type: none;
+}
+
+footer nav a {
+    font-size: 20px;
+    color: black;
+}
+
+footer nav ul {
+    display: flex;
+    gap: 162px;
+}
+
+footer nav ul ul {
+    display: flex;
+    flex-direction: column;     
+}
+
+footer nav ul ul a {
+    font-size: 18px;
+    color:  #948785; 
+}
+
+.cache {
+    display: none;
+}
+
+nav > ul li:hover .cache {
+    display: block;
+}
+
+
+/*--------------------------------------------- Camille CSS ---------------------------------------------*/
+.sélection {
+    margin: 34px auto 50px;
+    border: 2px solid blue;
+    display: flex;
+}
+
+.sélec {
+    border:2px solid indigo;
+    display: flex;
+    flex-direction: row;
+}
+
+/*------------------------------ SECTION 1 ------------------------------*/
+#sélec1 {
+    border: 2px solid red;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+#sélec1 .box0 {
+    grid-column: 1/3;
+    flex-direction: row;
+    color: #656D41;
+}
+
+#sélec1 .box1 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+#sélec1 .box2 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+#sélec1 .box3 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+#sélec1 .box4 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+#sélec1 .box5 {
+    grid-column: 3/5;
+    grid-row: 2/4;
+}
+
+/*--------------------------- SECTION ---------------------------*/
+#sélec2 {
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#sélec2 .recommandations {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#sélec1 .a {
+    font-family: 'B612 Mono', monospace;
+    font-size: 18px;
+    color: #656D41;
+}
