@@ -273,7 +273,7 @@ figcaption {
     grid-area: boutonmobile;
     background: #A7B46C;
     border-radius: 20px;
-    width: 220px;
+    width: 50vw;
 }
 
 .bandeaumobile a {
@@ -282,7 +282,7 @@ figcaption {
 }
 
 
-/* footer */
+/* ===> FOOTER <=== */
 
 footer {
     display: grid;
@@ -293,14 +293,25 @@ footer {
     grid-template-areas: ". reseaux newsletter" "footernav footernav footernav" "hr hr hr" ". logopaiement .";
 }
 
+.newsletter p, .newsletter input, .newsletter button, nav a {
+    font-family: 'Tajawal', sans-serif;
+}
+
 .reseaux {
+    display: flex;
     grid-area: reseaux;
     padding: 45px 0;
     justify-content: center;
     gap: 45px;
 }
 
+.reseaux a {
+    display: flex;
+    justify-content: center;
+}
+
 .newsletter {
+    display: flex;
     grid-area: newsletter;
     flex-direction: column;
     align-items: flex-end;
@@ -311,21 +322,31 @@ footer {
 
 .newsletter p {
     font-size: clamp(18px, 10vw, 24px);
+    grid-area: abonnezvous;
+}
+
+.newsletter input, .newsletter button {
+    box-shadow: none;
+    border: none;
+    font-size: 18px
 }
 
 .newsletter input {
-    border-bottom: black solid 0.5px;
+    text-align: right;
+    /* border-bottom: black solid 0.5px; */
+    border-bottom:  #948785 solid 0.5px;
     color: #948785;
-    font-size: clamp(14px, 8vw, 18px);
     padding: 2px;
+    cursor: text;
+    grid-area: email;
 }
 
 .newsletter button {
     background: #C3BBBA;
     height: 30px;
-    width: 250px;
-    font-size: clamp (14px, 8vw, 18px);
+    min-width: 250px;
     cursor: pointer;
+    grid-area: bouton;
 }
 
 .logopaiementmob {
@@ -334,6 +355,7 @@ footer {
 }
 
 .logopaiement {
+    display: flex;
     grid-area: logopaiement;
     justify-content: center;
     align-items: center;
@@ -351,6 +373,7 @@ footer hr {
 }
 
 footer nav {
+    display: flex;
     grid-area: footernav;
     justify-content: space-evenly;
     padding: 5px 20px;
@@ -358,10 +381,11 @@ footer nav {
 
 footer nav img {
     display: block;
-    margin: auto;
+    object-fit: contain;
+    /* margin: auto; */
 }
 
-ul {
+footer ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -370,6 +394,9 @@ ul {
 footer nav a {
     font-size: 20px;
     color: black;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
 }
 
 footer nav ul {
@@ -377,14 +404,18 @@ footer nav ul {
     gap: 162px;
 }
 
+.deroulant a {
+    display: flex;
+}
+
 footer nav ul ul {
     display: flex;
     flex-direction: column;     
 }
 
-footer nav ul ul a {
+.cache a {
     font-size: 18px;
-    color:  #948785; 
+    color:  #948785;
 }
 
 .cache {
@@ -395,15 +426,10 @@ nav > ul li:hover .cache {
     display: block;
 }
 
+/* FIN FOOTER */
 
 
-
-/* MEDIA */
-
-
-
-
-/* gap entre les menus et font sizes */
+/* MEDIA QUERIES */
 
 @media (max-width: 1163px) {
     
@@ -421,10 +447,30 @@ nav > ul li:hover .cache {
     }
 
     footer nav a {
-        font-size: 16px;
-     }
+        font-size: 18px;
+    }
 
-        
+    .logopaiement {
+        display: none;
+    }
+
+    .logopaiementmob {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        margin: 10px;
+        margin-bottom: 20px;
+    }
+
+    footer {
+        grid-template-areas: ". reseaux newsletter" "footernav footernav footernav" "hr hr hr" ". logopaiementmob .";
+    }
+
+    .newsletter button {
+        min-width: 180px;
+    }
+          
     .trio {
         gap: 20px;
     }
@@ -446,29 +492,46 @@ nav > ul li:hover .cache {
        font-size: 35px;
        letter-spacing: 0;
     }
-
   
 }
 
-/* changement disposition */
 
 @media (max-width: 900px) {
-    
 
+    /* footer */
+    
     footer {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto auto auto;
         grid-template-areas: "reseaux reseaux" "footernav newsletter" "hr hr" "logopaiementmob logopaiementmob";
         padding: 18px 15px;
     }
- 
+
     footer nav ul {
-        flex-direction: column;
-        gap: 20px;
+        display: grid;
+        gap: 40px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "apropos service" "mentions aide";
+    }
+
+    .aide {
+        grid-area: aide;
+    }
+
+    .service {
+        grid-area: service;
+    }
+
+    .apropos {
+        grid-area: apropos;
+    }
+
+    .mentions {
+        grid-area: mentions;
     }
 
     footer .newsletter, footer nav {
-       padding: 0;
+       padding: 10px;
     }
 
     .reseaux {
@@ -480,22 +543,11 @@ nav > ul li:hover .cache {
         width: 80%;
     }
 
-    .logopaiement {
-        display: none;
-    }
-
-    .logopaiementmob {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 30px;
-        margin: 10px;
-        margin-bottom: 20px;
-    }
-
       .newsletter input, .newsletter button{
-        font-size: 14px;
+        font-size: 16px;
     }
+
+    /* articles */
 
        .duo1 .titre, .basdesk  {
         display: none;
@@ -514,15 +566,57 @@ nav > ul li:hover .cache {
     .bandeauduo, .bandeautrio {
         padding: 15px 10px;
     }
-  
      
+}
+
+@media (max-width: 800px) {
+
+    /* seulement footer */
+
+    footer {
+        /* grid-template-columns: 1fr 1fr; */
+        /* grid-template-rows: auto auto auto auto; */
+        /* grid-template-areas: "reseaux reseaux" "newsletter newsletter" "footernav footernav" "hr hr" "logopaiementmob logopaiementmob"; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 18px 15px;
+    }
+
+    footer input {
+        width: 180px;
+        border: none;
+    }
+
+    footer nav ul {
+        gap: 30px;
+    }
+
+    /* .newsletter button {
+        width: 170px;
+    } */
+
+    .newsletter {
+        display: grid;
+        grid-template-areas: "abonnezvous abonnezvous" "email bouton";
+        margin-bottom: 30px;
+    }
+
+    .newsletter p {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .newsletter input {
+        text-align: left;
+    }
+  
 }
 
 @media (max-width: 666px) {
 
-    .newsletter button {
-    width: 170px;
-    }
+    /* seulement articles /// pas de media footer */
 
       .articles {
         width: 100%;
@@ -549,15 +643,34 @@ nav > ul li:hover .cache {
     .bandeaumobile {
         display: grid;
     }
-
-    footer input {
-        width: 180px;
-    }
-
    
 }
 
 @media (max-width: 400px) {
+
+    /* footer */
+
+    footer {
+        padding: 10px;
+    }
+
+    footer nav {
+        justify-content: flex-end;
+    }
+
+    .newsletter {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    footer nav ul {
+        gap: 10px;
+    }
+
+    /* articles */
 
     .articles {
         display: none;
@@ -574,9 +687,15 @@ nav > ul li:hover .cache {
         margin-bottom: 30px;
     }
 
+    footer nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
 
+    .logopaiementmob, .reseaux {
+        flex-wrap: wrap;
+        gap: 10px;
+}
 
-
-    
-    
 }
