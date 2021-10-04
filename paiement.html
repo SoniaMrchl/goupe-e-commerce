@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kamëi</title>
+    <link rel="stylesheet" href="style-paiement.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=B612+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- étape de la commande -->
+
+    <div class="etapecommande">
+        <nav>
+            <a href="panner.html">panier</a>
+            <img src="images_paiement\desktop\Group.png" alt="">
+            <a href="panner.html"><b>paiement</b></a>
+            <img src="images_paiement\desktop\Group.png" alt="">
+            <p>confirmation</p>
+        </nav>
+    </div>
+    <h2 class=titreetape>PAIEMENT</h2>
+
+    <!-- main -->
+
+    <main>
+
+        <div class="blocpaiement">
+
+            <div class=cb>
+                <div class="typepaiement flex">
+                    <div>
+                        <input type="radio">
+                        <label>&nbsp;VISA / Mastercard / CB</label>
+                    </div>
+                    <img src="images_paiement\desktop\mdi-light_credit-card.png" alt="">
+                </div>
+
+                <div class="infosbank">
+
+                    <div class="inputbank">
+                        <label>Numéro de carte&nbsp;:</label>
+                        <input type=" text" placeholder="XXXX XXXX XXXX XXXX">
+                    </div>
+
+                    <div class="inputbank">
+                        <label>Date d'expiration&nbsp;:</label>
+                        <input type="text" placeholder="mm / aa">
+                    </div>
+
+                    <div class="inputbank">
+                        <label>Cryptogramme&nbsp;:</label>
+                        <input type="text" placeholder="XXX">
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- <div> -->
+            <div class="typepaiement flex">
+                <div>
+                    <input type="radio">
+                    <label>&nbsp;Paypal</label>
+                </div>
+                <img src="images_paiement\desktop\paypal 1.png" alt="">
+            </div>
+            <!-- </div> -->
+
+            <!-- <div> -->
+            <div class="typepaiement flex">
+                <div>
+                    <input type="radio">
+                    <label>&nbsp;Carte cadeau</label>
+                </div>
+                <img src="images_paiement\desktop\fluent_gift-card-20-regular.png" alt="">
+            </div>
+        </div>
+
+        <!-- </div> -->
+
+        <div class="blocvalider">
+
+            <div class="recap">
+
+                <div class="total flex">
+                    <p>Total à payer</p>
+                    <p>76,90&nbsp;€</p>
+                </div>
+
+                <hr>
+
+                <div class="detail flex">
+                    <p><i>dont:</i></p>
+                    <div class="taxe flex">
+                        <p>TVA:</p>
+                        <p>13,80&nbsp;€</p>
+                    </div>
+
+                    <div class="fraislivraison flex">
+                        <p>Frais de livraison:</p>
+                        <p>6,90&nbsp;€</p>
+                    </div>
+                </div>
+            </div>
+            <button type="submit">Valider mon paiement</button>
+        </div>
+
+    </main>
+
+</body>
+
+</html>

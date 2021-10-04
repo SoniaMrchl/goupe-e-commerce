@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    background: #F3EDE4;
+}
+
+a, p, label {
+    font-family: 'Tajawal', sans-serif;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: rgba(101, 109, 65, 1);
+}
+
+
+/* début code barre "étape commande" */
+
+.etapecommande nav  {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.etapecommande  {
+    display: flex;
+    justify-content: flex-end;
+    margin: 30px;
+}
+
+.etapecommande p,  .etapecommande a, .etapecommande a:visited, .titreetape {
+    color: rgba(101, 109, 65, 1);
+    font-family: 'Tajawal', sans-serif;
+    text-decoration: none;
+}
+
+.etapecommande p, .etapecommande a {
+font-size: 18px;
+}
+
+.etapecommande img {
+    object-fit: contain;
+}
+
+.titreetape {
+    display: none;
+    text-align: center;
+    margin: 30px auto;
+    font-weight: 300;
+    letter-spacing: 5px;
+}
+
+/* fin code barre étape commande */
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+.cb, .recap {
+    min-height: 180px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* étape commande */
+
+
+
+
+.blocpaiement {
+    width: min(500px, 90%)
+}
+
+.blocpaiement > div, .recap {
+    border: solid black 0.75px;
+    background: white;
+    padding: 10px;
+}
+
+.detail {
+    flex-direction: column;
+}
+
+.blocpaiement > div, .recap {
+    margin-bottom: 10px;
+    background: white;
+}
+
+.blocvalider {
+    width: 324px;
+    gap: 20px;
+}
+
+.blocvalider button {
+    width: 100%;
+    border-radius: 0;
+    height: 50px;
+    box-shadow: none;
+    border: none;
+    background: #A7B46C;
+    cursor: pointer;
+}
+
+.typepaiement input {
+    cursor: pointer;
+}
+
+.typepaiement{
+   align-items: center;
+}
+
+.cb, .infosbank {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.infosbank {
+    justify-content: center;
+    gap: 10px;
+    margin: 30px 0;
+}
+
+.infosbank p {
+    margin-bottom: 10px;
+}
+
+.infosbank input {
+    background: whitesmoke;
+    padding: 5px;
+    color: grey;
+    border: none;
+    border-bottom: black;
+}
+
+.inputbank {
+    display: flex;
+    justify-content: space-between;
+}
+
+hr {
+    margin: 30px 10px;
+}
+
+@media (max-width: 900px) {
+
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blocvalider {
+        width: min(500px, 90%)
+    }
+
+    .blocpaiement, .blocvalider {
+        gap: 20px;
+    }
+
+}
+
+/* media étape commande */
+
+@media (max-width: 372px) {
+
+    .etapecommande {
+        display: none;
+    }
+
+    .titreetape {
+        display: block;
+    }
+
+    .inputbank {
+        flex-direction: column;
+    }
+
+}
