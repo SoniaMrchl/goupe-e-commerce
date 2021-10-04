@@ -218,9 +218,11 @@ nav > ul li:hover .cache {
 }
 
 
+
+
+
 /*--------------------------------------------- Camille CSS ---------------------------------------------*/
-.sélection {
-    margin: 34px auto 50px;
+#sélection {
     border: 2px solid blue;
     display: flex;
 }
@@ -235,8 +237,15 @@ nav > ul li:hover .cache {
 #sélec1 {
     border: 2px solid red;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 1fr auto;
+    gap: 20px;
+}
+
+#sélec1 .a {
+    font-family: 'B612 Mono', monospace;
+    font-size: 18px;
+    color: #656D41;
 }
 
 #sélec1 .box0 {
@@ -272,9 +281,10 @@ nav > ul li:hover .cache {
 
 /*--------------------------- SECTION ---------------------------*/
 #sélec2 {
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
     align-items: flex-start;
+    gap: 20px;
 }
 
 #sélec2 .recommandations {
@@ -283,8 +293,3 @@ nav > ul li:hover .cache {
     align-items: center;
 }
 
-#sélec1 .a {
-    font-family: 'B612 Mono', monospace;
-    font-size: 18px;
-    color: #656D41;
-}
