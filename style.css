@@ -396,9 +396,37 @@ nav > ul li:hover .cache {
 }
 
 
+<<<<<<< HEAD
+=======
 
 
+
+/*--------------------------------------------- Camille CSS ---------------------------------------------*/
+#sélection {
+    border: 2px solid blue;
+    display: flex;
+}
+>>>>>>> 76fcbeec51370e7d45faa1628b25de2153e079df
+
+
+<<<<<<< HEAD
 /* MEDIA */
+=======
+/*------------------------------ SECTION 1 ------------------------------*/
+#sélec1 {
+    border: 2px solid red;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 1fr auto;
+    gap: 20px;
+}
+
+#sélec1 .a {
+    font-family: 'B612 Mono', monospace;
+    font-size: 18px;
+    color: #656D41;
+}
+>>>>>>> 76fcbeec51370e7d45faa1628b25de2153e079df
 
 
 
@@ -450,6 +478,7 @@ nav > ul li:hover .cache {
   
 }
 
+<<<<<<< HEAD
 /* changement disposition */
 
 @media (max-width: 900px) {
@@ -516,6 +545,14 @@ nav > ul li:hover .cache {
     }
   
      
+=======
+/*--------------------------- SECTION ---------------------------*/
+#sélec2 {
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+>>>>>>> 76fcbeec51370e7d45faa1628b25de2153e079df
 }
 
 @media (max-width: 666px) {
@@ -557,6 +594,7 @@ nav > ul li:hover .cache {
    
 }
 
+<<<<<<< HEAD
 @media (max-width: 400px) {
 
     .articles {
@@ -580,3 +618,5 @@ nav > ul li:hover .cache {
     
     
 }
+=======
+>>>>>>> 76fcbeec51370e7d45faa1628b25de2153e079df
