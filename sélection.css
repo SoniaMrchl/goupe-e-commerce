@@ -9,17 +9,17 @@ body {
 }
 
 /*---------------------- HEADER LYNDA ----------------------*/
-input{
+#head input{
     width: 35px;
     height: 35px;
     /* max-width: 150px;
     min-width:30px;
     height: 40.5px; */
-    background: url('images_sélec-vêtements/search-line.png')no-repeat center 50% ;
+    background: url('images_sélec-vêtements/search-line.png')no-repeat center / cover ;
     border: none;
     }
 
-    .image3{
+    #head .image3{
         border:none;
         background: url('images_sélec-vêtements/shopping-bag-line.png')no-repeat center/cover;
         /* max-width:34px;
@@ -29,7 +29,7 @@ input{
         height: 36px;
     }
     
-    .image2{
+    #head .image2{
         border:none;
         background: url('images_sélec-vêtements/user-line.png')no-repeat center/cover ;
         /* max-width:34px;
@@ -39,7 +39,7 @@ input{
         height: 36px;
     }
 
-    .image1{
+    #head .image1{
         border:none;
         background: url('images_sélec-vêtements/heart-line.png')no-repeat center/cover;
         /* max-width:25px;
