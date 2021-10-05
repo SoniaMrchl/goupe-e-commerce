@@ -4,49 +4,133 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=B612+Mono&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
     <title>Projet2 e-commerce</title>
 </head>
 <body>
-            <!-- Vidéo en background -->
+            <!-- VIDÉO EN BACKGROUND -->
        <div class="video">
         <video control src="images-video/Vidéo Kordal (online-video-cutter.com).mp4" loop autoplay muted></video></div>
+        <div class="img-responsive">
+            <img src="images-video/Kordal tel.jpg" alt="">
+        </div>
 
-            <!-- Le HEADER -->
-        
- <!-- <header>
+            <!-- PHOTOS RUBRIQUE -->
+                
+    <section id="rubrique" class="">
+
+<!-- IMAGE 1 MATIÈRE ÉCO -->
+
+
+    <div class="matiere-eco flex">
+        <img src="images-video/kordal eco-responsable.png"alt="">
+        <div class="texte"><p>Découvrez <br> Notre gamme<br> Éco-responsable</p></div>
+    </div>
+
+<!-- IMAGE 2 LINGERIE-->
+    <div class="lingerie flex">
+        <img src="images-video/kordal lingerie.png" alt="">
+        <div class="texte"><p>Lingerie En <br> Maille<br> Côtelée</p></div>
+    </div>
+
+<!-- IMAGE 3 NOUVELLE-CO-->
+    <div class="nouvelle-co flex">
+            <img src="images-video/kordal terracotta.png" alt="">
+            <div class="texte"><p>Notre Nouvelle<br> Collection Terracotta</p></div>
+    </div>
+
+<!-- IMAGE RESPONSIVE -->
+
+
+
+                <!-- FOOTER -->
+    <footer>
+
+        <!-- ligne n°1 icones reseaux sociaux et bloc abonnement newsletter -->
+        <div class="reseaux">
+            <a href=""><img src="emoticones/facebook.png" alt="Logo Facebook"></a>
+            <a href=""><img src="emoticones/instagram.png" alt="Logo Instagram"></a>
+            <a href=""><img src="emoticones/twitter.png" alt="Logo Twitter"></a>
+        </div>
+
+        <div class="newsletter">
+            <p>Abonnez-vous à notre newsletter</p>
+            <input type="email" placeholder="ADRESSE EMAIL">
+            <button type="submit">VALIDER</button>
+        </div>
+
+        <!-- ligne n°2 menus déroulants -->
         <nav>
-            <h1>Kamail</h1> -->
-            <!-- en haut à gauche -->
-            <!-- <input type="search" name="recherche" id="recherche">  -->
+            <ul>
+                <li class="deroulant aide"><a href="">Aide &nbsp;<img src="emoticones/angle_orange.png"
+                            alt="Chevron dirigé vers le bas">
+                    </a>
+                    <ul class=cache>
+                        <li><a href="">Livraisons et retours</a></li>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">COVID-19</a></li>
+                    </ul>
+                </li>
+                <li class="deroulant service"><a href="">Service client &nbsp;<img
+                            src="emoticones/angle_orange.png" alt="Chevron dirigé vers le bas"></a>
+                    <ul class=cache>
+                        <li><a href="">Contactez-nous</a></li>
+                        <li><a href="">Suivi de commande</a></li>
+                        <li><a href="">Guide des tailles</a></li>
+                        <li><a href="">E-TICKET</a></li>
+                        <li><a href="">Carte cadeaux</a></li>
+                    </ul>
+                </li>
+                <li class="deroulant apropos"><a href="">À propos de nous &nbsp;<img
+                            src="emoticones/angle_orange.png" alt="Chevron dirigé vers le bas"></a>
+                    <ul class=cache>
+                        <li><a href="">kameï</a></li>
+                        <li><a href="">Magasins</a></li>
+                        <li><a href="">Presse</a></li>
+                        <li><a href="">Développement durable & éthique</a></li>
+                        <li><a href="">Partenaires</a></li>
+                    </ul>
+                </li>
+                <li class="deroulant mentions"><a href="">Mentions légales &nbsp;<img
+                            src="emoticones/angle_orange.png" alt="Chevron dirigé vers le bas"></a>
+                    <ul class=cache>
+                        <li><a href="">CGV</a></li>
+                        <li><a href="">Politique de confidentialité</a></li>
+                        <li><a href="">Politique en matière de cookies</a></li>
+                        <li><a href="">Paramètres des cookies</a></li>
+                    </ul>
+                </li>
+            </ul>
 
-            <!-- en haut à droite -->
-            <!-- <a href="#"> 
-                <img src="emoticones/heart.png" alt="">
-            </a>
-            <a href="#">
-                <img src="emoticones/account.png" alt="">
-            </a>
-            <a href="#">
-                <img src="emoticones/bag.png" alt="">
-            </a>
-           </nav>
-    </header> -->
+        </nav>
 
-                        <!-- PHOTOS CATÉGORIE -->
-                      
-    <section id="catégorie">
+        <hr>
 
-        <div class="matiere-eco flex column">
-        <div><p>DÉCOUVREZ <br> NOTRE GAMME <br> ÉCO-RESPONSABLE</p></div>
-    </div>
-        <div class="lingerie flex column">
-        <div><p>LINGERIE EN <br> MAILLE <br> CÔTELÉE</p></div>
-    </div>
-        <div class="nouvelle-co flex column">
-        <div><p>NOTRE NOUVELLE <br> COLLECTION TERRACOTTA</p></div>
-    </div>
+        <!-- ligne n°3 logos paiement -->
+        <div class="logopaiement">
+            <img src="emoticones/visa.png" alt="">
+            <img src="emoticones/master-card.png" alt="">
+            <img src="emoticones/paypal 1.png" alt="">
+            <img src="emoticones/logo-carte-bleue 1.png" alt=""> 
+        </div>
 
-</section>
+        
 
-</body>
-</html>
+        <!-- <div class="logopaiementmob">
+            <img src="images_catalogue\mobile\bx_bxl-visa.png" alt="">
+            <img src="images_catalogue\mobile\uim_master-card.png" alt="">
+            <img src="images_catalogue\mobile\paypal 1.png" alt="">
+            <img src="images_catalogue\mobile\logo-carte-bleue 1.png" alt="">
+        </div> -->
+
+    </footer>
+
+                </section>
