@@ -70,6 +70,16 @@ font-size: 18px;
     color: #656D41;    
 }
 
+.paiemens {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Tajawal';
+    margin-bottom: 50px;
+    
+}
+
 /* fin code barre étape commande */
 
 main {
@@ -420,6 +430,19 @@ nav > ul li:hover .cache {
         }
     
 }
+
+/* infos commande Lynda */
+
+@media (max-width:850px) {
+    .paiemens {
+    display:grid;
+    grid-template-areas: "child1 child2" "child3 child4";
+    gap:20px;
+    margin:20px;
+    }
+}
+
+/* fin infos commande */
 
 @media (max-width: 800px) {
 
