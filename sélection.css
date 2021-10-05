@@ -345,13 +345,30 @@ button {
 
 /*------------------ ICÔNES LIVRAISON --------------------*/
 /*------------------ Ce que j'ai fais --------------------*/
-/* #s3 {
+#s3 {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
     align-items: center;
     margin-bottom: 75px;
 
+}
+
+#s3 .box {
+    gap: 30px;
+}
+
+#s3 .b2 {
+    margin-bottom: 40px;
+}
+
+#s3 .b3 {
+    margin-bottom: 35px;
+    gap: 10px;
+}
+
+#s3 .b4 {
+    margin-bottom: 10px;
 }
 
 #s3 img {
@@ -365,10 +382,10 @@ button {
 
 #s3 p {
     text-align: center;
-} */
+}
 
 /*------------------------- ICÔNES BAS LYNDA -----------------------*/
-#s3 {
+/* #s3 {
     border: 2px solid blue;
     justify-content: center;
     align-items: center;
@@ -391,7 +408,7 @@ button {
 #s3 img {
     justify-content: center;
     align-items: center;
-}
+} */
 
 
 /*----------------------- FOOTER LOUISE -----------------------*/
