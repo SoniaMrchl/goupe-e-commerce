@@ -4,143 +4,217 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Groupe1 E-commerce</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Sélection-vêtement</title>
+    <link rel="stylesheet" href="sélection.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=B612+Mono:wght@400;700&display=swap" rel="stylesheet">
 
 </head>
 <body>
     <!-----------------------------------HEADER------------------------------------->
 
    <!------------------------------------HEADER------------------------------------->
-   <main id="sélection" class="flex">
-       <section id="sélec1" class="sélec grid flex">
-           <nav class="sélec box0 grid flex">
-               <a class="a" href="Accueil.html">Accueil</a>
-               <P class="a">&ensp;/&ensp;</P>
-               <a class="a" href="catalogue.html">Jour</a>
-               <P class="a">&ensp;/&ensp;</P>
-               <a class="a" href="catalogue.html">Nouveautés</a>
-               <P class="a">&ensp;/&ensp;</P>
-               <p class="a">Jogging velours</p>
-           </nav>
-   
-           <div class="sélec box1 photo">
-               <img id="theimage" src="images_sélec-vêtements/joggingvelours1.png" width="250" height="325" alt="photo 1">
-           </div>
+   <main>
+        <div class="box0 flex grid">
+            <nav class="flex">
+                <a class="a" href="Accueil.html">Accueil</a>
+                <P class="a">&ensp;/&ensp;</P>
+                <a class="a" href="catalogue.html">Jour</a>
+                <P class="a">&ensp;/&ensp;</P>
+                <a class="a" href="catalogue.html">Nouveautés</a>
+                <P class="a">&ensp;/&ensp;</P>
+                <p>Jogging velours</p>
+            </nav>
+        </div>
 
-           <div class="sélec box2 photo">
-               <img src="images_sélec-vêtements/joggingvelours2.png" width="250" height="325" alt="photo 2">
-           </div>
+        <section id="s1" class="grid">
+            <div class="box box1 photo">
+                <img id="theimage" src="images_sélec-vêtements/joggingvelours1.png" width="250" height="325" alt="photo 1">
+            </div>
 
-           <div class="sélec box3 photo">
-               <img src="images_sélec-vêtements/joggingvelours3.png" width="250" height="325" alt="photo 3">
-           </div>
+            <div class="box box2 photo">
+                <img src="images_sélec-vêtements/joggingvelours2.png" width="250" height="325" alt="photo 2">
+            </div>
 
-           <div class="sélec box4 photo">
-               <img src="images_sélec-vêtements/joggingvelours4.png" width="250" height="325" alt="photo 4">
-           </div>
+            <div class="box box3 photo">
+                <img src="images_sélec-vêtements/joggingvelours3.png" width="250" height="325" alt="photo 3">
+            </div>
+
+            <div class="box box4 photo">
+                <img src="images_sélec-vêtements/joggingvelours4.png" width="250" height="325" alt="photo 4">
+            </div>
 
 <!---------------------------------- détail du vêtement ----------------->
-           <div class="sélec box5 grid flex">
-               <div class="détail flex grid">
-                   <h1>Jogging velours</h1>
-                   <p>Prix : 69€</p>
-                   <p>Réf : k0123-JVK</p>
-                   
-                   <p>Coloris :</p>
-                   <img src="images_sélec-vêtements/Coloris.png" width="40" height="40" alt="couleur khaki">
+            <div class="box box5 grid flex">
+                <div class="flex grid">
+                    <h1>Jogging velours</h1>
+                    <p>Prix : 69€</p>
+                    <p>Réf : k0123-JVK</p>
+                    
+                    <p>Coloris :</p>
+                    <img class="color" src="images_sélec-vêtements/Coloris.png" width="40" height="40" alt="couleur khaki">
 
-                   <p>Tailles :</p>
-                   <nav class="détail taille flex grid">
-                       <a href="">XS</a>
-                       <a href="">S</a>
-                       <a href="">M</a>
-                       <a href="">L</a>
-                       <a href="">XL</a>
-                   </nav>
-               </div>
+                    <p>Tailles :</p>
+                    <nav class="taille flex grid">
+                        <a href="#">XS</a>
+                        <a href="#">S</a>
+                        <a href="#">M</a>
+                        <a href="#">L</a>
+                        <a href="#">XL</a>
+                    </nav>
+                </div>
 
-                   <button class="button1 détail flex grid" type="submit">Ajouter à mon panier</button>
-                   <br/>
-                   <button class="button2 détail flex grid" type="submit">Réserver en magasin</button>
+                    <button class="bt button1 flex grid" type="submit">Ajouter à mon panier</button>
+                    <br/>
+                    <button class="bt button2 flex grid" type="submit">Réserver en magasin</button>
 
-               <div id="sélec" class="sélec détail flex grid">
-                   <div class="descrition">
-                       <h4>Desciption</h4>
-                       <span class="icon-plus"></span>
-                   </div>
-                   <div class="composition">
-                       <h4>Composition</h4>
-                       <span class="icon-plus"></span>
-                   </div>
-                   <div class="entretien">
-                       <h4>Entretien</h4>
-                       <span class="icon-plus"></span>
-                   </div>
-               </div>
-           </div>
-       </section>
+                <div id="box" class="détail flex grid">
+                    <div class="description">
+                        <h4>Desciption</h4>
+                        <span class="icon-plus"></span>
+                    </div>
+                    <div class="composition">
+                        <h4>Composition</h4>
+                        <span class="icon-plus"></span>
+                    </div>
+                    <div class="entretien">
+                        <h4>Entretien</h4>
+                        <span class="icon-plus"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<!------------------------------------ RECOMMANDATIONS ------------------------------------->
-       <section id="sélec2" class="sélec grid flex">
-           <h2>Recommandations</h2>
-           <div class="recommandations grid flex">
+    <!------------------------------------ RECOMMANDATIONS ------------------------------------->
+        <section id="s2" class="flex grid">
+            <h2>Recommandations</h2>
+            <div class="recommandations flex grid">
+                <div class="box">
+                    <a href="catalogue.html">
+                        <img src="images_sélec-vêtements/joggincotele.png"width="250" height="325"  alt="photo 5">
+                        <h4>Jogging côtelé</h4>
+                        <h5>59€</h5>
+                    </a>
+                </div>
 
-               <div class="sélec box1">
-                   <a href="">
-                       <img src="images_sélec-vêtements/joggincotele.png"width="250" height="325"  alt="photo 5">
-                       <h4>Jogging côtelé</h4>
-                       <h5>59€</h5>
-                   </a>
-               </div>
+                <div class="box">
+                    <a href="catalogue.html">
+                        <img src="images_sélec-vêtements/pantalonmolleton.png"width="250" height="325"  alt="photo 6">
+                        <h4>Pantalon molleton</h4>
+                        <h5>49€</h5>
+                    </a>
+                </div>
 
-               <div class="sélec box2">
-                   <a href="">
-                       <img src="images_sélec-vêtements/pantalonmolleton.png"width="250" height="325"  alt="photo 6">
-                       <h4>Pantalon molleton</h4>
-                       <h5>49€</h5>
-                   </a>
-               </div>
-
-               <div class="sélec box3">
-                   <a href="">
-                       <img src="images_sélec-vêtements/sweatmaille.png" width="250" height="325" alt="photo 7">
-                       <h4>Sweat maille</h4>
-                       <h5>49€</h5>
-                   </a>
-               </div>
-           </div>
-       </section>
+                <div class="box">
+                    <a href="catalogue.html">
+                        <img src="images_sélec-vêtements/sweatmaille.png" width="250" height="325" alt="photo 7">
+                        <h4>Sweat maille</h4>
+                        <h5>49€</h5>
+                    </a>
+                </div>
+            </div>
+        </section>
 <!---------------------------------- ICONES BAS ----------------------------------->
+<section id="s3" class="flex grid">
+    <div class="paiements flex">
+
+        <div class="actuGalerie flex">
+            <a href="#">
+                <img class="flex" src="images_sélec-vêtements/colis.png" alt="Colis">
+            </a>
+            <span>livraison et retour <br> gratuit</span>
+        </div> 
+
+        <div class="actuGalerie flex">
+            <a href="#">
+                <img class="flex" src="images_sélec-vêtements/cadenas.png" alt="Sécurité">
+            </a>
+            <span>Paiement sécurisé</span>
+        </div>
+
+        <div class="actuGalerie flex">
+            <a href="#">
+                <img class="suivi flex" src="images_sélec-vêtements/camionlivraison.png" alt="Suivi">
+            </a>
+            <span>Suivi de commande</span>
+        </div> 
+
+        <div class="actuGalerie flex">
+            <a href="">
+                <img class="flex" src="images_sélec-vêtements/telephone.png" alt="Appel">
+            </a>
+            <span>Service client appel <br> non surtaxé</span>
+        </div> 
+
+    </div>
+
+<!----------------------------- Ce que j'ai fais ------------------------------>
+    <!-- <div class="flex">
+        <div class="box">
+            <img class="flex" src="images_sélec-vêtements/colis.png" alt="carton">
+            <p>Livraison et retour <br/> gratuit</p>
+        </div>
+    </div>
+
+    <div class="flex">
+        <div class="box">
+            <img class="flex" src="images_sélec-vêtements/cadenas.png" alt="cadenas">
+            <p>Paiement sécurisé</p>
+        </div>
+    </div>
+
+    <div class="flex">
+        <div class="box">
+            <img class="flex" src="images_sélec-vêtements/camionlivraison.png" alt="camion">
+            <p>Suivi de commande</p>
+        </div>
+    </div>
+
+    <div class="flex">
+        <div class="box">
+            <img class="flex" src="images_sélec-vêtements/telephone.png" alt="téléphone">
+            <p>Service client <br/> Appel non surtaxé</p>
+        </div>
+    </div> -->
+</section>
    </main>
 <!--------------------------------------------Footer------------------------------->
-<footer class=grid>
+
+<!-- footer -->
+
+<footer>
 
     <!-- ligne n°1 icones reseaux sociaux et bloc abonnement newsletter -->
-    <div class="reseaux flex">
+    <div class="reseaux">
         <a href=""><img src="images_catalogue\desktop\facebook.png" alt="Logo Facebook"></a>
         <a href=""><img src="images_catalogue\desktop\instagram.png" alt="Logo Instagram"></a>
         <a href=""><img src="images_catalogue\desktop\twitter.png" alt="Logo Twitter"></a>
     </div>
 
-    <div class="newsletter flex">
+    <div class="newsletter">
         <p>Abonnez-vous à notre newsletter</p>
-        <input type="email" placeholder="votre adresse email" style="text-align:right">
+        <input type="email" placeholder="votre adresse email">
         <button type="submit">valider</button>
     </div>
 
     <!-- ligne n°2 menus déroulants -->
-    <nav class=flex>
+    <nav>
         <ul>
-            <li class=deroulant><a href="" class="flex">Aide &nbsp<img
-                        src="images_catalogue\desktop\angle_orange.png" alt="Chevron dirigé vers le bas"></a>
+            <li class="deroulant aide"><a href="">Aide &nbsp;<img src="images_catalogue\desktop\angle_orange.png"
+                        alt="Chevron dirigé vers le bas">
+                </a>
                 <ul class=cache>
                     <li><a href="">Livraisons et retours</a></li>
                     <li><a href="">FAQ</a></li>
                     <li><a href="">COVID-19</a></li>
                 </ul>
             </li>
-            <li class=deroulant><a href="" class="flex">Service client &nbsp<img
+            <li class="deroulant service"><a href="">Service client &nbsp;<img
                         src="images_catalogue\desktop\angle_orange.png" alt="Chevron dirigé vers le bas"></a>
                 <ul class=cache>
                     <li><a href="">Contactez-nous</a></li>
@@ -150,19 +224,17 @@
                     <li><a href="">Carte cadeaux</a></li>
                 </ul>
             </li>
-            <li class=deroulant><a href="" class="flex">A propos de nous &nbsp<img
+            <li class="deroulant apropos"><a href="">À propos de nous &nbsp;<img
                         src="images_catalogue\desktop\angle_orange.png" alt="Chevron dirigé vers le bas"></a>
                 <ul class=cache>
-                    <li><a href="">A propos de kameï</a></li>
+                    <li><a href="">kameï</a></li>
                     <li><a href="">Magasins</a></li>
                     <li><a href="">Presse</a></li>
-                    <li><a href="">Nos engagements</a></li>
                     <li><a href="">Développement durable & éthique</a></li>
                     <li><a href="">Partenaires</a></li>
-                    <li><a href="">Recrutement</a></li>
                 </ul>
             </li>
-            <li class=deroulant><a href="" class="flex">Mentions légales &nbsp<img
+            <li class="deroulant mentions"><a href="">Mentions légales &nbsp;<img
                         src="images_catalogue\desktop\angle_orange.png" alt="Chevron dirigé vers le bas"></a>
                 <ul class=cache>
                     <li><a href="">CGV</a></li>
@@ -175,14 +247,24 @@
 
     </nav>
 
+    <hr>
+
     <!-- ligne n°3 logos paiement -->
-    <div class="logopaiement flex">
+    <div class="logopaiement">
         <img src="images_catalogue\desktop\visa.png" alt="">
         <img src="images_catalogue\desktop\master-card.png" alt="">
         <img src="images_catalogue\desktop\paypal 1.png" alt="">
         <img src="images_catalogue\desktop\logo-carte-bleue 1.png" alt="">
     </div>
 
+    <div class="logopaiementmob">
+        <img src="images_catalogue\mobile\bx_bxl-visa.png" alt="">
+        <img src="images_catalogue\mobile\uim_master-card.png" alt="">
+        <img src="images_catalogue\mobile\paypal 1.png" alt="">
+        <img src="images_catalogue\mobile\logo-carte-bleue 1.png" alt="">
+    </div>
+
 </footer>
+
 </body>
 </html>
