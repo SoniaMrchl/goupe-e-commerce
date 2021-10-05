@@ -10,70 +10,71 @@ body {
 
 /*---------------------- HEADER LYNDA ----------------------*/
 input{
-   
-    max-width: 150px;
+    width: 35px;
+    height: 35px;
+    /* max-width: 150px;
     min-width:30px;
-    height: 40.5px;
-    background: url('image/Zone\ recherche\ \(1\).png')no-repeat center 50% ;
+    height: 40.5px; */
+    background: url('images_sélec-vêtements/search-line.png')no-repeat center 50% ;
     border: none;
-    
-    
     }
+
     .image3{
         border:none;
-        background: url('image/clarity_shopping-bag-line\ \(1\).png')no-repeat center/cover;
-        max-width:34px;
+        background: url('images_sélec-vêtements/shopping-bag-line.png')no-repeat center/cover;
+        /* max-width:34px;
         min-width:17px;
-        height:40px;
-      
+        height:40px; */
+        width: 35.44px;
+        height: 36px;
     }
     
     .image2{
         border:none;
-        background: url('image/clarity_user-line\ \(1\).png')no-repeat center/cover ;
-        max-width:34px;
+        background: url('images_sélec-vêtements/user-line.png')no-repeat center/cover ;
+        /* max-width:34px;
         min-width:17px;
-        height:40px;
-        
+        height:40px; */
+        width: 35.44px;
+        height: 36px;
     }
+
     .image1{
         border:none;
-        background: url('image/clarity_heart-line\ \(1\).png')no-repeat center/cover;
-        max-width:25px;
+        background: url('images_sélec-vêtements/heart-line.png')no-repeat center/cover;
+        /* max-width:25px;
         min-width:15px;
-        height:40px;
-        padding:20px;
-        
-       
+        height:40px; */
+        width: 35.44px;
+        height: 36px;
     }
+
     header{
-    width:auto;
-    font-family: B612 Mono;
-    font-style: normal;
-    font-weight: normal;
-    max-width: 1536px;
-    min-width: 400px;
-    height: 140px;
-    background: white;
-    color:white;
-    
+        width:auto;
+        font-family: B612 Mono;
+        font-style: normal;
+        font-weight: normal;
+        /* max-width: 1536px; */
+        /* min-width: 400px; */
+        height: 140px;
+        background: white;
+        color:white;
     }
     
     .topbar{
         display:flex;
         height:70px;
         justify-content: space-between;
-        align-items: flex-end;
+        align-items: center;
         margin:0px;
         padding:10px;
-    
     }
     
     .active{
-    
         color:red;
     }
     
+
     /*menue */
     
     header nav .sous-titre{
@@ -96,13 +97,10 @@ input{
          background:white;
          line-height:40px;
          text-align: center;
-    
      }
     
      header nav ul li  a{
-         display:block;
-         
-    
+         display: block;
      }
     
      header nav ul li a:hover{
@@ -116,7 +114,6 @@ input{
     
      header nav ul li:hover ul li{
          display:block;
-    
      }
 
     a{
@@ -133,9 +130,8 @@ input{
     line-height: 140.5%;
     letter-spacing: 0.25em;
     color: #656D41;
-    
-    
     }
+
     .nom{
         font-family: B612 Mono;
         font-size: 20px;
@@ -143,28 +139,25 @@ input{
         font-weight: normal;
        color: #000000;
     }
+
     .sous-nom{
     font-family:tajawal;
     font-size: 20px;
     color:black;
     font-weight: normal;
-    
     }
     
     .sous-titre{
-       
     font-family: B612 Mono;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
     line-height: 24px;
     color: #000000;
-    
-    
-    
+    align-items: center;
     }
+
     .titre{
-        
     font-family: Tajawal;
     font-style: normal;
     font-weight: normal;
@@ -184,9 +177,9 @@ input{
     }
     
     #ch{
-    
         display :none;
     }
+    
 /*---------------------------- MON CSS ----------------------------*/
 
 main {
@@ -219,7 +212,6 @@ section {
 .flex {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
 }
 
 h1, p {
@@ -268,7 +260,6 @@ section img {
 
 .box0 nav {
     margin: 37.5px 25px;
-    justify-content: space-between;
     flex-direction: row;
 }
 
