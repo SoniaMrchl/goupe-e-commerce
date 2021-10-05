@@ -16,9 +16,8 @@
 
 </head>
 <body>
-    <!-----------------------------------HEADER------------------------------------->
+<!-------------------------------- HEADER LYNDA --------------------------------->
     <header>
-       
         <div class="topbar">
             <label for ="ch" id= "lab"></label>
             <input type="checkbox" id="ch" />
@@ -108,10 +107,10 @@
 
                 </ul>     
             </div>
-        </nav>
-            
+        </nav>  
     </header>
-   <!------------------------------------HEADER------------------------------------->
+
+ <!---------------------------------- MAIN ----------------------------------->
     <main>
         <div class="box0 flex grid">
             <nav class="flex">
@@ -143,47 +142,62 @@
             </div>
 
 <!---------------------------------- détail du vêtement ----------------->
-            <div class="box box5 grid flex">
-                <div class="flex grid">
+            <div id="détail" class="box box5 grid flex">
+                <div class="généralflex grid">
                     <h1>Jogging velours</h1>
-                    <p>Prix : 69€</p>
-                    <p>Réf : k0123-JVK</p>
-                    
+                    <p>Prix : 69€ <br/> Réf : k0123-JVK</p>
                     <p>Coloris :</p>
                     <img class="color" src="images_sélec-vêtements/Coloris.png" width="40" height="40" alt="couleur khaki">
-
+                    <br/>
                     <p>Tailles :</p>
                     <nav class="taille flex grid">
-                        <a href="#">XS</a>
-                        <a href="#">S</a>
-                        <a href="#">M</a>
-                        <a href="#">L</a>
-                        <a href="#">XL</a>
+                        <a href="">XS</a>
+                        <a href="">S</a>
+                        <a href="">M</a>
+                        <a href="">L</a>
+                        <a href="">XL</a>
                     </nav>
                 </div>
+                <br/>
+                <div class="button flex grid">
+                    <a href="panner.html">
+                        <button class="bt button1 flex grid" type="submit">Ajouter à mon panier</button>
+                    </a>
 
-                    <button class="bt button1 flex grid" type="submit">Ajouter à mon panier</button>
-                    <br/>
-                    <button class="bt button2 flex grid" type="submit">Réserver en magasin</button>
+                    <a href="panner.html">
+                        <button class="bt button2 flex grid" type="submit">Réserver en magasin</button>
+                    </a>
+                </div>
 
-                <div id="box" class="détail flex grid">
-                    <div class="description">
-                        <h4>Desciption</h4>
-                        <span class="icon-plus"></span>
+                <div id="box" class="flex grid">
+                    <div class="détail description flex">
+                        <img src="images_sélec-vêtements/Line 1.png" alt="séparation">
+                        <span class="icon-plus flex">
+                            <h4>Desciption</h4>
+                            <img class="img flex" src="images_sélec-vêtements/Bouton_dérouléplus.png" alt="déroulant-plus">
+                        </span>
                     </div>
-                    <div class="composition">
-                        <h4>Composition</h4>
-                        <span class="icon-plus"></span>
+
+                    <div class="détail composition flex">
+                        <img src="images_sélec-vêtements/Line 1.png" alt="séparation">
+                        <span class="icon-plus flex">
+                            <h4>Composition</h4>
+                            <img class="img flex" src="images_sélec-vêtements/Bouton_dérouléplus.png" alt="déroulant-plus">
+                        </span>
                     </div>
-                    <div class="entretien">
-                        <h4>Entretien</h4>
-                        <span class="icon-plus"></span>
+
+                    <div class="détail entretien flex">
+                        <img src="images_sélec-vêtements/Line 1.png" alt="séparation">
+                        <span class="icon-plus flex">
+                            <h4>Entretien</h4>
+                            <img class="img flex" src="images_sélec-vêtements/Bouton_dérouléplus.png" alt="déroulant-plus">
+                        </span>
                     </div>
                 </div>
             </div>
         </section>
 
-    <!------------------------------------ RECOMMANDATIONS ------------------------------------->
+<!------------------------------------ RECOMMANDATIONS ------------------------------------->
         <section id="s2" class="flex grid">
             <h2>Recommandations</h2>
             <div class="recommandations flex grid">
@@ -212,152 +226,118 @@
                 </div>
             </div>
         </section>
-<!---------------------------------- ICONES BAS LYNDA ----------------------------------->
+<!---------------------------------- ICONES BAS ----------------------------------->
+<!--- Ce que j'ai fais --->
         <section id="s3" class="flex grid">
-        <!-- <div class="paiements flex">
+            <a class="icones flex" href="">
+                <div class="box flex">
+                    <img class="flex" src="images_sélec-vêtements/colis.png" alt="carton">
+                    <p>Livraison et retour <br/> gratuit</p>
+                </div>
+            </a>
 
-            <div class="actuGalerie flex">
-                <a href="#">
-                    <img class="flex" src="images_sélec-vêtements/colis.png" alt="Colis">
-                </a>
-                <p>livraison et retour <br> gratuit</p>
-            </div> 
+            <a class="icones flex" href="">
+                <div class="box b2 flex">
+                    <img class="flex" src="images_sélec-vêtements/cadenas.png" alt="cadenas">
+                    <p>Paiement sécurisé</p>
+                </div>
+            </a>
 
-            <div class="actuGalerie flex">
-                <a href="#">
-                    <img class="flex" src="images_sélec-vêtements/cadenas.png" alt="Sécurité">
-                </a>
-                <p>Paiement sécurisé</p>
-            </div>
+            <a class="icones flex" href="">
+                <div class="box b3 flex">
+                    <img class="flex" src="images_sélec-vêtements/camionlivraison.png" alt="camion">
+                    <p>Suivi de commande</p>
+                </div>
+            </a>
 
-            <div class="actuGalerie flex">
-                <a href="#">
-                    <img class="suivi flex" src="images_sélec-vêtements/camionlivraison.png" alt="Suivi">
-                </a>
-                <p>Suivi de commande</p>
-            </div> 
-
-            <div class="actuGalerie flex">
-                <a href="">
-                    <img class="flex" src="images_sélec-vêtements/telephone.png" alt="Appel">
-                </a>
-                <p>Service client appel <br> non surtaxé</p>
-            </div> 
-
-        </div> -->
-
-<!----------------------------- Ce que j'ai fais ------------------------------>
-        <a class="icones flex" href="">
-            <div class="box flex">
-                <img class="flex" src="images_sélec-vêtements/colis.png" alt="carton">
-                <p>Livraison et retour <br/> gratuit</p>
-            </div>
-        </a>
-
-        <a class="icones flex" href="">
-            <div class="box b2 flex">
-                <img class="flex" src="images_sélec-vêtements/cadenas.png" alt="cadenas">
-                <p>Paiement sécurisé</p>
-            </div>
-        </a>
-
-        <a class="icones flex" href="">
-            <div class="box b3 flex">
-                <img class="flex" src="images_sélec-vêtements/camionlivraison.png" alt="camion">
-                <p>Suivi de commande</p>
-            </div>
-        </a>
-
-        <a class="icones flex" href="">
-            <div class="box b4 flex">
-                <img class="flex" src="images_sélec-vêtements/telephone.png" alt="téléphone">
-                <p>Service client <br/> Appel non surtaxé</p>
-            </div>
-        </a>
-    </section>
-</main>
-<!---------------------------------- FOOTER ----------------------------------->
+            <a class="icones flex" href="">
+                <div class="box b4 flex">
+                    <img class="flex" src="images_sélec-vêtements/telephone.png" alt="téléphone">
+                    <p>Service client <br/> Appel non surtaxé</p>
+                </div>
+            </a>
+        </section>
+    </main>
 
 <!-------------------------------- FOOTER LOUISE --------------------------------->
+    <footer>
 
-<footer>
+        <!-- ligne n°1 icones reseaux sociaux et bloc abonnement newsletter -->
+        <div class="reseaux">
+            <a href=""><img src="images_catalogue\desktop\facebook.png" alt="Logo Facebook"></a>
+            <a href=""><img src="images_catalogue\desktop\instagram.png" alt="Logo Instagram"></a>
+            <a href=""><img src="images_catalogue\desktop\twitter.png" alt="Logo Twitter"></a>
+        </div>
 
-    <!-- ligne n°1 icones reseaux sociaux et bloc abonnement newsletter -->
-    <div class="reseaux">
-        <a href=""><img src="images_catalogue\desktop\facebook.png" alt="Logo Facebook"></a>
-        <a href=""><img src="images_catalogue\desktop\instagram.png" alt="Logo Instagram"></a>
-        <a href=""><img src="images_catalogue\desktop\twitter.png" alt="Logo Twitter"></a>
-    </div>
+        <div class="newsletter">
+            <p>Abonnez-vous à notre newsletter</p>
+            <input type="email" placeholder="votre adresse email">
+            <button type="submit">valider</button>
+        </div>
 
-    <div class="newsletter">
-        <p>Abonnez-vous à notre newsletter</p>
-        <input type="email" placeholder="votre adresse email">
-        <button type="submit">valider</button>
-    </div>
+        <!-- ligne n°2 menus déroulants -->
+        <nav>
+            <ul>
+                <li class="deroulant aide"><a href="">Aide &nbsp;<img src="images_catalogue\desktop\angle_orange.png"
+                            alt="Chevron dirigé vers le bas">
+                    </a>
+                    <ul class=cache>
+                        <li><a href="">Livraisons et retours</a></li>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">COVID-19</a></li>
+                    </ul>
+                </li>
+                <li class="deroulant service"><a href="">Service client &nbsp;<img
+                            src="images_catalogue\desktop\angle_orange.png" alt="Chevron dirigé vers le bas"></a>
+                    <ul class=cache>
+                        <li><a href="">Contactez-nous</a></li>
+                        <li><a href="">Suivi de commande</a></li>
+                        <li><a href="">Guide des tailles</a></li>
+                        <li><a href="">E-TICKET</a></li>
+                        <li><a href="">Carte cadeaux</a></li>
+                    </ul>
+                </li>
+                <li class="deroulant apropos"><a href="">À propos de nous &nbsp;<img
+                            src="images_catalogue\desktop\angle_orange.png" alt="Chevron dirigé vers le bas"></a>
+                    <ul class=cache>
+                        <li><a href="">kameï</a></li>
+                        <li><a href="">Magasins</a></li>
+                        <li><a href="">Presse</a></li>
+                        <li><a href="">Développement durable & éthique</a></li>
+                        <li><a href="">Partenaires</a></li>
+                    </ul>
+                </li>
+                <li class="deroulant mentions"><a href="">Mentions légales &nbsp;<img
+                            src="images_catalogue\desktop\angle_orange.png" alt="Chevron dirigé vers le bas"></a>
+                    <ul class=cache>
+                        <li><a href="">CGV</a></li>
+                        <li><a href="">Politique de confidentialité</a></li>
+                        <li><a href="">Politique en matière de cookies</a></li>
+                        <li><a href="">Paramètres des cookies</a></li>
+                    </ul>
+                </li>
+            </ul>
 
-    <!-- ligne n°2 menus déroulants -->
-    <nav>
-        <ul>
-            <li class="deroulant aide"><a href="">Aide &nbsp;<img src="images_catalogue\desktop\angle_orange.png"
-                        alt="Chevron dirigé vers le bas">
-                </a>
-                <ul class=cache>
-                    <li><a href="">Livraisons et retours</a></li>
-                    <li><a href="">FAQ</a></li>
-                    <li><a href="">COVID-19</a></li>
-                </ul>
-            </li>
-            <li class="deroulant service"><a href="">Service client &nbsp;<img
-                        src="images_catalogue\desktop\angle_orange.png" alt="Chevron dirigé vers le bas"></a>
-                <ul class=cache>
-                    <li><a href="">Contactez-nous</a></li>
-                    <li><a href="">Suivi de commande</a></li>
-                    <li><a href="">Guide des tailles</a></li>
-                    <li><a href="">E-TICKET</a></li>
-                    <li><a href="">Carte cadeaux</a></li>
-                </ul>
-            </li>
-            <li class="deroulant apropos"><a href="">À propos de nous &nbsp;<img
-                        src="images_catalogue\desktop\angle_orange.png" alt="Chevron dirigé vers le bas"></a>
-                <ul class=cache>
-                    <li><a href="">kameï</a></li>
-                    <li><a href="">Magasins</a></li>
-                    <li><a href="">Presse</a></li>
-                    <li><a href="">Développement durable & éthique</a></li>
-                    <li><a href="">Partenaires</a></li>
-                </ul>
-            </li>
-            <li class="deroulant mentions"><a href="">Mentions légales &nbsp;<img
-                        src="images_catalogue\desktop\angle_orange.png" alt="Chevron dirigé vers le bas"></a>
-                <ul class=cache>
-                    <li><a href="">CGV</a></li>
-                    <li><a href="">Politique de confidentialité</a></li>
-                    <li><a href="">Politique en matière de cookies</a></li>
-                    <li><a href="">Paramètres des cookies</a></li>
-                </ul>
-            </li>
-        </ul>
+        </nav>
 
-    </nav>
+        <hr>
 
-    <hr>
+        <!-- ligne n°3 logos paiement -->
+        <div class="logopaiement">
+            <img src="images_catalogue\desktop\visa.png" alt="">
+            <img src="images_catalogue\desktop\master-card.png" alt="">
+            <img src="images_catalogue\desktop\paypal 1.png" alt="">
+            <img src="images_catalogue\desktop\logo-carte-bleue 1.png" alt="">
+        </div>
 
-    <!-- ligne n°3 logos paiement -->
-    <div class="logopaiement">
-        <img src="images_catalogue\desktop\visa.png" alt="">
-        <img src="images_catalogue\desktop\master-card.png" alt="">
-        <img src="images_catalogue\desktop\paypal 1.png" alt="">
-        <img src="images_catalogue\desktop\logo-carte-bleue 1.png" alt="">
-    </div>
+        <div class="logopaiementmob">
+            <img src="images_catalogue\mobile\bx_bxl-visa.png" alt="">
+            <img src="images_catalogue\mobile\uim_master-card.png" alt="">
+            <img src="images_catalogue\mobile\paypal 1.png" alt="">
+            <img src="images_catalogue\mobile\logo-carte-bleue 1.png" alt="">
+        </div>
 
-    <div class="logopaiementmob">
-        <img src="images_catalogue\mobile\bx_bxl-visa.png" alt="">
-        <img src="images_catalogue\mobile\uim_master-card.png" alt="">
-        <img src="images_catalogue\mobile\paypal 1.png" alt="">
-        <img src="images_catalogue\mobile\logo-carte-bleue 1.png" alt="">
-    </div>
-
-</footer>
+    </footer>
 
 </body>
 </html>
