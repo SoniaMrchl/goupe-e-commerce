@@ -166,7 +166,7 @@ header nav ul {
         display:block;
     }
     
-    .toggle-button span{
+    /* .toggle-button span{
         display: block;
         margin-top:4px;
         transition: 0.5s ease;
@@ -175,7 +175,7 @@ header nav ul {
         border-radius:4px;
         background: #656D41;
     
-    }
+    } */
         
      .liste{
         color: white;
@@ -202,14 +202,15 @@ header nav ul {
     }
     
     
-    #side-bare.active span{
+    /* #side-bare.active span{
     
       position:absolute;
     
-    }
+    } */
     
     .burgermagie {
         display: block;
     }
 
 }
+
