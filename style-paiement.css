@@ -50,12 +50,24 @@ font-size: 18px;
     object-fit: contain;
 }
 
-.titreetape {
+.etapemobile {
     display: none;
+    margin-bottom: 20px;
+}
+
+.titreetape {
     text-align: center;
-    margin: 30px auto;
+    margin-top: 20px;
     font-weight: 300;
     letter-spacing: 5px;
+}
+
+.retourmobile {
+    font-family: 'B612 Mono', monospace;
+    font-size: 14px;
+    text-decoration: underline;
+    margin: 15px;
+    color: #656D41;    
 }
 
 /* fin code barre étape commande */
@@ -175,13 +187,13 @@ hr {
 
 /* media étape commande */
 
-@media (max-width: 372px) {
+@media (max-width: 400px) {
 
     .etapecommande {
         display: none;
     }
 
-    .titreetape {
+    .etapemobile {
         display: block;
     }
 
