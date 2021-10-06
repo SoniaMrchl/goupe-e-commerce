@@ -1,10 +1,190 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: 0;
+}
+
+/* HEADER */
+
+
+header {
+width: 100%;
+height: 100vh;
+background: url(accueil-images/image\ couv.jpg) no-repeat
+50% 50%;
+background-size: cover;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header li {
+    list-style-type: none;
+}
+
+.liste{
+    display: none;
+}
+.iconesheadermobile, .searchburger {
+    display: none;
+}
+
+.cache {
+    display: none;
+}
+
+nav > ul li:hover .cache {
+    display: block;
+}
+
+.logokamei, header .menuvisible {
+    font-family: 'B612 Mono';
+}
+
+.logokamei {
+    color: #656D41;
+    font-weight: 400;
+    font-size: 36px;
+    letter-spacing: 5px;
+}
+
+.menuvisible {
+    font-size: 20px;   
+}
+
+.menuvisible, header .cache li, header .cache a:visited {
+    color: black;
+}
+
+.promorouge {
+    color: #E06D49;
+}
+
+.searchheader input, header .cache li {
+    font-family: 'Tajawal';
+}
+
+header nav a:hover, header .cache li a:hover{
+    color: #656d41ff;
+}
+
+header .cache li {
+    padding: 5px;
+    font-size: 20px;
+    /* background: white; */
+}
+
+.searchheader input {
+    border: none;
+    border-bottom: solid black 0.5px;
+    font-size: 14px;
+}
+
+.searchheader img {
+    object-fit: contain;
+}
+
+.searchheader, .iconesheader, .headertop, header nav ul{
+    display: flex;
+}
+
+.searchheader {
+    gap: 10px;
+    align-items: flex-end;
+}
+
+.headertop {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.iconesheader {
+    gap: 20px;
+}
+
+header nav ul {
+    justify-content: space-evenly;
+   margin-top: 20px;
+}
+
+
+@media (max-width: 750px) {
+
+   
+/* PARTIE HAMBURGER */
+#side-bar{
+    position:absolute;
+    width:180px;
+    height:30%;
+    background: #656D41;
+   left:-300px;
+    transition:.5s ease-out;
+    z-index: 4;
+
+}
+.toggle-button{
+  position:absolute;
+ top:-50px;
+  left:310px;
+  cursor:pointer;
+  height: 30px;
+  width:30px;
+
+
+}
+.liste{
+    display:block;
+}
+
+.toggle-button span{
+    display: block;
+    margin-top:4px;
+    transition: 0.5s ease;
+    width:40px;
+    height:10px;
+    border-radius:4px;
+    background: #656D41;
+
+}
+
+ .liste{
+    /* color: white; */
+    list-style-type: none;
+    font-size:20px;
+    cursor:pointer;
+    padding-left:5px;
+    font-family: 'tajawal';
+    font-weight:normal;
+
+}
+ .liste:hover{
+    background: #292929;
+    /* color:#fcfcfb; */
+}
+
+
+#side-bar.active{
+    left:0;
+}
+#side-bar.active.toggle-button{
+    top:2.8rem;
+    left:235px;
+}
+
+
+#side-bare.active span{
+
+  position:absolute;
+
+}
+
+.burgermagie {
+    display: block;
+}
 }
 
 /* VIDEO */
+
 .video{
     position: relative;
     height: 100vh;
@@ -26,6 +206,8 @@
     display: none;
 }
 /* STRUCTURE PHOTOS */
+
+
 /* .grid{
     display: grid;
     grid-gap: 20px;
@@ -412,7 +594,33 @@ footer nav ul ul {
 }
 
 @media (max-width: 400px) {
+    header {
+        padding: 8px 20px;
+    }
 
+    header nav {
+        display: none;
+    }
+
+    header .logokamei {
+        font-size: 28px;
+    }
+
+    .searchheader, .iconesheader {
+        display: none;
+    }
+
+    .searchburger {
+        display: flex;
+        gap: 35px;
+    }
+
+    .iconesheadermobile {
+        display: flex;
+        gap: 15px;
+    }
+
+   
     /* footer */
 
     footer {

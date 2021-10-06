@@ -18,118 +18,83 @@
 </head>
 <body>
 <!-------------------------------- HEADER LYNDA --------------------------------->
-    <header id="head">
-        <div class="topbar">
-            <label for ="ch" id= "lab"></label>
-            <input type="checkbox" id="ch" />
-            <div class="recherche">
-               <a href="">
-                   <input type="search" name="recherche" id="recherche">
-                </a>
+    <header>
+        <div class=headertop>
+            <div class="searchheader">
+                <img src="images-header\clarity_search-line.png" alt="">
+                <input type="search" placeholder="recherche">
             </div>
 
-            <!-------coupier la div avec id mais il faut pas avoir plusieurs id donc vos code sinon ca larche pas
-               rajouter ca juste apres la ou il ily'a la prmier bar de header-->
-               <!-- <div id="side-bar">
-                <div class="toggle-button" id="toggle-button">
-                   <span></span>
-                   <span></span>
-                   <span></span>
-        
-                </div>
-                   <ul>
-                         <li class="liste">Nouveauté</li>
-                         <li class="liste">Jour</li>
-                         <li class="liste">Nuit</li>
-                         <li class="liste">Lingeries</li>
-                         <li class="liste">Accessoires</li>
-                         <li class="liste">Promotion</li>
-                   </ul>
-            </div> -->
-
-            <div class="title">
-                <a class="title1" href="index.html">kameï</a>
+            <div class=searchburger>
+                <a href=""><img src="images-header\burger_mobile.png" alt=""> </a>
+                <a href=""><img src="images-header\search_mobile.png" alt=""> </a>
             </div>
 
-             <div class="compte">
-                <a href="#"><input class="image1" type="" name="" id="">
-                </a>
-                    
-                <a href="identifier.html">
-                    <input class="image2"  type="" name="" id="">
-                </a>
-                    
-                <a href="panier.html">
-                    <input class="image3"  type="" name="" id="">
-                </a>
-               
-            </div>
-         
-        </div >
+            <a href="index.html" class=logokamei>kameï</a>
 
+            <div class="iconesheader">
+                <a href=""><img src="images-header\clarity_heart-line.png" alt=""> </a>
+                <a href=""><img src="images-header\clarity_user-line.png" alt=""> </a>
+                <a href="panner.html"><img src="images-header\clarity_shopping-bag-line.png" alt=""> </a>
+            </div>
+
+            <div class="iconesheadermobile">
+                <a href=""><img src="images-header\clarity_heart-line_mobile.png" alt=""> </a>
+                <a href=""><img src="images-header\clarity_user-line_mobile.png" alt=""> </a>
+                <a href=""><img src="images-header\clarity_shopping-bag-line_mobile.png" alt=""> </a>
+            </div>
+        </div>
         <nav>
-            <div class="sous-titre flex">
-                <ul>
-                    <li><a class="nom"> Nouveautés</a></li>
-                    <li><a class="nom">Jour</a>
-                    
-                        <ul class="sous-nom">
-                             <li><a> Maille</a></li>
-                             <li><a>Chemises</a></li>
-                             <li><a> Cardigans</a></li>
-                             <li><a> Pantalons</a></li>
-                             <li><a> Ensembles</a></li>
-                             <li> <a>T-shirt</a></li>
-                             <li><a>short</a></li> 
-                             <br><br>
-                             <li><a>Voir tout </a></li>   
-                        </ul>
-                    </li>
-                <!---liste nuit----------------->
-                    <li><a class="nom">Nuit</a>
-                        <ul class="sous-nom">
-                            <li><a>Pyjamas</a></li>
-                            <li><a>T-shirts et hauts</a></li>
-                            <li><a>Bas</a></li>
-                            <li><a>Chemises de nuit</a></li>
-                            <li><a>Déshabillés</a></li>
-                            <li><a>Chaussons</a></li>
-                            <li><a>short</a></li> 
-                            <br><br>
-                            <li><a>Voir tout</a></li>   
-                        </ul>
-                    </li>
-                <!--liste lingeries------------------------------>
-                    <li><a class="nom">Lingeries</a>
-                        <ul class="sous-nom">
-                            <li><a>Soutiens-gorge</a></li>              
-                            <li><a>Bas</a></li>
-                            <li><a>Lots de slips</a></li>
-                            <li><a>Lot de tops</a></li>
-                            <li><a>Bodies</a></li>
-                            <br><br>
-                            <li><a>Voir tout</a></li>   
-                        </ul>
-                    </li>
-                <!--liste accessoires------------------------->
 
-                    <li><a class="nom">Accessoires
-                        <ul class="sous-nom">
-                            <li><a>Chaussettes</a></li>  
-                            <li><a>Trousses de toilette</a>/li>
-                            <li><a>Accessoires de lingerie</a></li>
-                            <br><br>
-                            <li><a>Voir tout</a></li>   
+            <ul>
+                <li><a href="#catalogue.html" class=menuvisible>nouveautés</a></li>
+                <li><a href="" class=menuvisible>jour</a>
+                    <ul class=cache>
+                        <li><a href=>Maille</a></li>
+                        <li><a href=>Chemises</a></li>
+                        <li><a href=>Cardigans</a></li>
+                        <li><a href=>Pantalons</a></li>
+                        <li><a href=>Ensembles</a></li>
+                        <li> <a href=>T-shirts</a></li>
+                        <li><a href=>Shorts</a></li>
+                        <li><a href="">Voir tout</a></li>
+                    </ul>
+                </li>
+                <li><a href="" class=menuvisible>nuit</a>
+                    <ul class=cache>
+                        <li><a href=>Pyjamas</a></li>
+                        <li><a href=>T-shirts et hauts</a></li>
+                        <li><a href=>Bas</a></li>
+                        <li><a href=>Chemises de nuit</a></li>
+                        <li><a href=>Déshabillés</a></li>
+                        <li><a href=>Chaussons</a></li>
+                        <li><a href=>Shorts</a></li>
+                        <li><a href="">Voir tout</a></li>
+                    </ul>
+                </li>
+                <li><a href="" class=menuvisible>lingerie</a>
+                    <ul class=cache>
+                        <li><a href=>Soutiens-gorge</a></li>
+                        <li><a href=>Bas</a></li>
+                        <li><a href=>Lots de slips</a></li>
+                        <li><a href=>Lot de tops</a></li>
+                        <li><a href=>Bodies</a></li>
+                        <li><a href=>Voir tout</a></li>
+                    </ul>
+                </li>
+                <li><a href="" class=menuvisible>accessoires
+                        <ul class=cache>
+                            <li><a href=>Chaussettes</a></li>
+                            <li><a href=>Trousses de toilette</a></li>
+                            <li><a href=>Accessoires de lingerie</a></li>
+                            <li><a href=>Voir tout</a></li>
                         </ul>
-                    </li>
-                <!-----------promotion--------------------------->
-                    <li><a class="active">Promotions</a></li>
+                </li>
+                <li><a href="" class="menuvisible"><span class=promorouge>promotions</span></a></li>
+            </ul>
+        </nav>
 
-                </ul>     
-            </div>
-        </nav>  
     </header>
-
  <!---------------------------------- MAIN ----------------------------------->
     <main>
         <div class="box0 flex grid">

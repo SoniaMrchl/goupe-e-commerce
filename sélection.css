@@ -9,314 +9,131 @@ body {
 }
 
 /*---------------------- HEADER LYNDA ----------------------*/
-#head input{
-    width: 35px;
-    height: 35px;
-    /* max-width: 150px;
-    min-width:30px;
-    height: 40.5px; */
-    background: url('images_sélec-vêtements/search-line.png')no-repeat center / cover ;
-    border: none;
-    }
+header {
+    background: white;
+    padding: 25px;
+}
 
-    #head .image3{
-        border:none;
-        background: url('images_sélec-vêtements/shopping-bag-line.png')no-repeat center/cover;
-        /* max-width:34px;
-        min-width:17px;
-        height:40px; */
-        width: 35.44px;
-        height: 36px;
-    }
-    
-    #head .image2{
-        border:none;
-        background: url('images_sélec-vêtements/user-line.png')no-repeat center/cover ;
-        /* max-width:34px;
-        min-width:17px;
-        height:40px; */
-        width: 35.44px;
-        height: 36px;
-    }
+header a {
+    text-decoration: none;
+}
 
-    #head .image1{
-        border:none;
-        background: url('images_sélec-vêtements/heart-line.png')no-repeat center/cover;
-        /* max-width:25px;
-        min-width:15px;
-        height:40px; */
-        width: 35.44px;
-        height: 36px;
-    }
+header li {
+    list-style-type: none;
+}
 
-    header{
-        width:auto;
-        font-family: B612 Mono;
-        font-style: normal;
-        font-weight: normal;
-        /* max-width: 1536px; */
-        /* min-width: 400px; */
-        height: 140px;
-        background: white;
-        color:white;
-    }
-    
-    .topbar{
-        font-family: "B612 Mono";
-        font-size:20px;
-        display:flex;
-        height:70px;
-        justify-content: space-between;
-        align-items: center;
-        margin:0px;
-        padding:10px;
-    }
-    
-    .active{
-        color:#E06D49;
-    }
-    
+.iconesheadermobile, .searchburger {
+    display: none;
+}
 
-    /*menue */
-    
-    header nav .sous-titre{
-        color:black;
-        height: 70px;
-    }
-        
-    header nav ul {
-        list-style: none;
-        margin:0px  80px;
-        padding:0px;
-    }
-    
-    header nav ul li{
-         margin:0px ;
-         padding:0px;
-         float:left;
-         width:200px;
-         height: 40px;
-         background:white;
-         line-height:40px;
-         text-align: center;
-     }
-    
-     header nav ul li  a{
-         display: block;
-         color:#948785;
-         font-size: 20px;
-         font-family: 'tajawal';
-     }
-    
-     header nav ul li a:hover{
-         color:violet;
-         opacity:0.3px;
-     }
-    
-     header nav ul li ul li{
-         display:none;
-     }
-    
-     header nav ul li:hover ul li{
-         display:block;
-     }
+.cache {
+    display: none;
+}
 
-    /* a{
-        text-decoration:none;
-        color:black;
-    }
+nav > ul li:hover .cache {
+    display: block;
+}
 
-     ul li {
-       list-style-type: none;
-    }
+.logokamei, header .menuvisible {
+    font-family: 'B612 Mono';
+}
 
-    .title1{
-    font-size: max(2vw,35px);
-    line-height: 140.5%;
-    letter-spacing: 0.25em;
+.logokamei {
     color: #656D41;
+    font-weight: 400;
+    font-size: 36px;
+    letter-spacing: 5px;
+}
+
+.menuvisible {
+    font-size: 20px;   
+}
+
+.menuvisible, header .cache li, header .cache a:visited {
+    color: black;
+}
+
+.promorouge {
+    color: #E06D49;
+}
+
+.searchheader input, header .cache li {
+    font-family: 'Tajawal';
+}
+
+header nav a:hover, header .cache li a:hover{
+    color: #656d41ff;
+}
+
+header .cache li {
+    padding: 5px;
+    font-size: 20px;
+    background: white;
+}
+
+.searchheader input {
+    border: none;
+    border-bottom: solid black 0.5px;
+    font-size: 14px;
+}
+
+.searchheader img {
+    object-fit: contain;
+}
+
+.searchheader, .iconesheader, .headertop, header nav ul{
+    display: flex;
+}
+
+.searchheader {
+    gap: 10px;
+    align-items: flex-end;
+}
+
+.headertop {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.iconesheader {
+    gap: 20px;
+}
+
+header nav ul {
+    justify-content: space-evenly;
+   margin-top: 20px;
+}
+
+
+@media (max-width: 750px) {
+
+    header {
+        padding: 8px 20px;
     }
 
-    .nom{
-        font-family: B612 Mono;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: normal;
-        color: #000000;
+    header nav {
+        display: none;
     }
 
-    .sous-nom{
-        font-family:tajawal;
-        font-size: 20px;
-        color:black;
-        font-weight: normal;
-    } */
-
-    .sous-titre{
-        font-family: 'B612 Mono', sans-serif;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 20px;
-        line-height: 24px;
-        color: #000000;
-        /* align-items: center; */
+    header .logokamei {
+        font-size: 28px;
     }
 
-    .titre{
-        font-family: 'Tajawal', sans-serif;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 24px;
-        line-height: 34px;
-        color: #000000;
-        padding:10px;
-    }
-  
-    #lab{
-        width: 30px;
-        height:30px;
-        background:linear-gradient(#000000 0%,#000000 20%,transparent 21%, transparent 40%,#000000 41%, 
-        #000000 60%,transparent 61%,
-        transparent 80%, #000000 81%,#000000 100%);
-        margin:10px;
-        display:none;
-    }
-    
-    #ch{
-        display :none;
+    .searchheader, .iconesheader {
+        display: none;
     }
 
-    .liste{
-        display:none;
+    .searchburger {
+        display: flex;
+        gap: 35px;
     }
 
-    @media all and (max-width:850px){
-
-        #side-bar{
-            position:absolute;
-            width:180px;
-            height:30%;
-            background: #656D41;
-           left:-300px;
-            transition:.5s ease-out;
-            z-index: 4;
-        
-        }
-        .toggle-button{
-          position:absolute;
-         top:-50px;
-          left:310px;
-          cursor:pointer;
-          height: 30px;
-          width:30px;
-         
-        
-        }
-        .liste{
-            display:block;
-        }
-        
-        .toggle-button span{
-            display: block;
-            margin-top:4px;
-            transition: 0.5s ease;
-            width:40px;
-            height:10px;
-            border-radius:4px;
-            background: #656D41;
-        
-        }
-            
-         .liste{
-            color: white;
-            list-style-type: none;
-            font-size:20px;
-            cursor:pointer;
-            padding-left:5px;
-            font-family: 'tajawal';
-            font-weight:normal;
-            
-        }
-         .liste:hover{
-            background: #292929;
-            color:#fcfcfb;
-        }
-        
-        
-        #side-bar.active{
-            left:0;
-        }
-        #side-bar.active.toggle-button{
-            top:2.8rem;
-            left:235px;
-        }
-        
-        
-        #side-bare.active span{
-        
-          position:absolute;
-        
-        }
-        
-        #side-bare.active span:nth-child(1) {
-            transform: rotate(45deg);
-        }
-        
-        #side-bare.active span:nth-child(2) {
-           opacity:0;
-        }
-        
-        
-        #side-bare.active span:nth-child(3) {
-            transform: rotate(45deg);
-        }
-        /*il faut pas mettre des espaces entre la classe active et #side-bar sinon ne fonctionne pas*/
-    
-        nav{
-            display:block;
-            position:absolute;
-            left:0px;
-            right:0px;
-            transform: translate(-1000px,0);
-            transition:all 0.5s ease;
-     
-        }
-     
-       nav>a{
-            width:auto;
-        }
-
-        input{
-
-            background: url(image/Icone\ recherche.png)no-repeat;
-            width:20px;
-            height:20px;
-        }
-        
-        .image1{
-            height:20px;
-            margin:4px;
-            width:20px;
-            padding:0px;
-            
-        }
-        
-        .image2 {
-          
-            height:20px;
-            margin:4px;
-            width:20px;
-            
-        
-        }
-        
-        .image3{
-        
-            height:20px;
-            margin:4px;
-            width:20px;
-        }
+    .iconesheadermobile {
+        display: flex;
+        gap: 15px;
     }
+
+}
     
 /*---------------------------- MON CSS ----------------------------*/
 
