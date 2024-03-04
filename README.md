@@ -1,2 +1,4 @@
 # Réaliser un site e-commerce 
-### utils : html , css
+- Réalisation d'un site internet e-commerce:
+- outils:
+- html et css
